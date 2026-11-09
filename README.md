@@ -3,6 +3,8 @@
 An Omarchy bar widget for [Klicky](https://github.com/Muneer320/klicky), the
 local mechanical keyboard sound daemon.
 
+![Klicky in the Omarchy bar](preview.png)
+
 The widget shows whether `klicky.service` is running and toggles it with a
 left click. It does not read keyboard events, play audio, install packages, or
 run privileged commands itself.
@@ -67,6 +69,12 @@ independently.
 The plugin has no install hooks, network access, package installation, or
 privileged operations. It only invokes `systemctl --user` to start and stop
 the documented Klicky user service.
+
+## Screenshots
+
+![Klicky bar view](screenshots/klicky-bar-light.png)
+
+![Klicky bar detail view](screenshots/klicky-bar-detail.png)
 
 Validate changes with:
 
