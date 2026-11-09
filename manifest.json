@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "id": "io.github.matrix-node.klicky",
+  "name": "Klicky",
+  "version": "0.1.0",
+  "author": "matrix-node",
+  "license": "MIT",
+  "description": "A bar toggle for Klicky mechanical keyboard sounds.",
+  "kinds": ["bar-widget"],
+  "entryPoints": {
+    "barWidget": "BarWidget.qml"
+  },
+  "barWidget": {
+    "displayName": "Klicky",
+    "category": "Audio",
+    "allowMultiple": false,
+    "defaultSection": "center"
+  }
+}
