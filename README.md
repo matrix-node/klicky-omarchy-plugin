@@ -37,6 +37,15 @@ Or validate a local checkout:
 omarchy plugin validate .
 ```
 
+To remove the bar widget:
+
+```bash
+omarchy plugin remove io.github.matrix-node.klicky --yes
+```
+
+Removing the widget does not uninstall Klicky. To remove Klicky separately,
+follow Klicky's official uninstall instructions.
+
 ## Usage
 
 The widget appears in the center bar. Click it to start or stop Klicky.
@@ -54,6 +63,10 @@ The plugin is a small companion to Klicky rather than a replacement for its
 evdev listener and audio daemon. This keeps the Omarchy integration focused,
 avoids duplicate key event readers, and allows Klicky to be updated
 independently.
+
+The plugin has no install hooks, network access, package installation, or
+privileged operations. It only invokes `systemctl --user` to start and stop
+the documented Klicky user service.
 
 Validate changes with:
 
