@@ -1,0 +1,15 @@
+{
+  "audio.system": "Leave system default",
+  "audio.builtin": "Use built-in audio",
+  "audio.bluetooth": "Follow Bluetooth when connected",
+  "panel.title": "Klicky",
+  "panel.running": "Running",
+  "panel.stopped": "Stopped",
+  "panel.description": "Choose the sound pack and audio output policy.",
+  "panel.soundSection": "Sound pack",
+  "panel.soundDescription": "Choose the key sound that Klicky plays.",
+  "panel.outputSection": "Audio output",
+  "panel.outputDescription": "Choose where Klicky should play. Bluetooth falls back to built-in audio.",
+  "tooltip.running": "Left: turn Klicky off · Right: settings",
+  "tooltip.stopped": "Left: turn Klicky on · Right: settings"
+}

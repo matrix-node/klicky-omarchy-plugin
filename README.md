@@ -6,8 +6,11 @@ local mechanical keyboard sound daemon.
 ![Klicky in the Omarchy bar](preview.png)
 
 The widget shows whether `klicky.service` is running and toggles it with a
-left click. It does not read keyboard events, play audio, install packages, or
-run privileged commands itself.
+left click. Right-click opens themed controls for selecting the installed
+sound pack and audio output policy. The Bluetooth policy follows a connected
+Bluetooth sink and falls back to built-in audio until Bluetooth is available.
+It does not read keyboard events, play audio, install packages, or run
+privileged commands itself.
 
 ## Requirements
 
@@ -59,6 +62,12 @@ klicky switch cherrymx-brown-pbt
 klicky volume 0.4
 ```
 
+The widget's audio policy changes the PipeWire default sink for the user
+session. `Leave system default` makes no routing changes, `Use built-in audio`
+selects the first local ALSA sink, and `Follow Bluetooth when connected`
+selects a Bluetooth sink when available and otherwise falls back to local
+audio.
+
 ## Development
 
 The plugin is a small companion to Klicky rather than a replacement for its
@@ -72,9 +81,7 @@ the documented Klicky user service.
 
 ## Screenshots
 
-![Klicky bar view](screenshots/klicky-bar-light.png)
-
-![Klicky bar detail view](screenshots/klicky-bar-detail.png)
+![Klicky settings](screenshots/Klicky.png)
 
 Validate changes with:
 
