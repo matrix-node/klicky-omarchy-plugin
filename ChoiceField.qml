@@ -55,8 +55,7 @@ Item {
         Column {
           id: headerColumn
           anchors.left: parent.left
-          anchors.right: headerChevron.left
-          anchors.rightMargin: Style.space(8)
+          anchors.right: parent.right
           spacing: Style.space(2)
 
           Text {
@@ -79,16 +78,6 @@ Item {
           }
         }
 
-        Text {
-          id: headerChevron
-          anchors.right: parent.right
-          anchors.verticalCenter: parent.verticalCenter
-          textFormat: Text.PlainText
-          text: root.expanded ? "󰅀" : "󰅂"
-          color: Qt.darker(root.foreground, 1.25)
-          font.family: root.fontFamily
-          font.pixelSize: Style.font.body
-        }
       }
 
       BorderSurface {
