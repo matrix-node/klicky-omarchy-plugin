@@ -18,15 +18,15 @@ privileged commands itself.
 - Klicky installed and available as a user service
 - `klicky.service` installed for the current user
 
-Install Klicky separately by following its official instructions:
+Install Klicky separately before enabling this plugin. Use a trusted package
+manager or build a pinned release from the
+[official Klicky repository](https://github.com/Muneer320/klicky). Review the
+upstream installation instructions and source before running any commands, and
+verify release signatures or checksums from an independent trusted source when
+they are provided. Do not pipe downloaded scripts directly to a shell.
 
-```bash
-curl -fsSL https://klicky.muneer320.tech/install.sh | bash
-```
-
-The installer is intentionally separate because Omarchy marketplace plugins
-are cloned and loaded as shell code; they do not run install hooks or request
-sudo.
+The plugin does not install Klicky, download code, or request elevated
+privileges. It only uses the existing `klicky.service` user unit.
 
 ## Install
 
